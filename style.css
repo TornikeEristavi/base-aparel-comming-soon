@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Josefin+Sans:wght@300;400;600&family=Montserrat:wght@500;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+}
+
+.main {
+    position: absolute;
+    width: 375px;
+    height: 800px;       
+    background-image: url(./images/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 90px;
+
+}
+
+.logo {
+    position: absolute;
+    width: 100px;
+    height: 20.89px;
+    left: 32px;
+    top: 31px;
+}
+
+.content {
+    position: absolute;
+    width: 311px;
+    height: 310px;
+    left: 32px;
+    top: 398px;
+}
+
+.weare {
+    position: absolute;
+    height: 42px;
+    width: 311px;
+    height: 42px;                                                
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 10.8254px;
+    color: #CE9898;
+} 
+
+.coming {
+    position: absolute;
+    height: 84px;
+    top: 42px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 10.8254px;
+    color: #423A3A;
+}
+
+.hello {
+    position: absolute;
+    width: 311px;
+    height: 88px;
+    top: 142px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #CE9898;
+}
+.mailaddress {
+    position: relative; 
+    top: 660px;
+    width: 311px;
+    height: 48px;
+    left: 32px;
+    line-height: 48px;
+
+    box-sizing: border-box;
+    width: 311px;
+    height: 48px;
+    left: 32px;
+    line-height: 48px;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    border: 1px solid #CE9898;
+    border-radius: 28px;
+}
+
+input {
+    position: absolute;
+    padding-left: 15%;
+    width: 311px;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    border: 1px solid #CE9898;
+    border-radius: 28px;
+    height: 48px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border: 1px solid #fdf9f9;
+  }
+
+::placeholder {
+    position: absolute;
+    padding-left: 1rem;
+    left: 10%;
+    top: 35%;    
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #CE9898;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.isari {
+    position: absolute;    
+    width: 64px;
+    height: 48px;
+    right: -1%;
+    background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+    border-radius: 28px;
+}
+
+.arrow {
+    position: absolute;
+    top: 15px;
+    left: 28px;
+    width: 8.84px;
+    height: 17.67px;
+}
+
+@media only screen and (min-width: 720px) {
+    body {
+        background: #FAFAFA;
+        background-image: url(./images/bg-pattern-desktop.svg);
+    }
+    .main {
+        /* position: relative; */
+        width: 1440px;
+        height: 800px;
+        background-image: url(./images/hero-desktop.jpg);
+        background-repeat: no-repeat;
+        background-position: right;
+        
+    }
+    .logo {
+        position: absolute;
+
+        left: 195px; /*სტანდარტულად ყველა left 165 პიქსელია ფიგმაზე და ამას გასასწორებლად დაჭირდა 195 პიქსელი*/
+        width: 158px;
+        height: 33px;
+        top: 64.91px;
+    }
+
+    .weare {
+        text-align: left;
+        width: 444px;
+        height: 64px;
+        top: -100px;     /*სტანდარტული ტოპი რატომ არ მუშაობს*/
+        left: 165px;
+
+    }
+
+    .coming {
+        left: 165px;
+        height: 128px;
+        width: 444px;
+        text-align: left;
+    }
+
+    .hello {
+        width: 444px;
+        left: 165px;
+        text-align: left;
+    }
+
+    .mailaddress {
+        width: 445px;
+        height: 56px;
+        left: 195px;
+    }
+
+    input {
+        width: 445px;
+        height: 56px;
+    }
+
+    ::placeholder {
+        top: 40%;
+        left: 11%;
+    }
+
+    .isari {
+        width: 100px;
+        height: 56px;
+        left: 345px;
+    }
+
+    .arrow {
+        width: 8.84px;
+        height: 17.67px;
+        left: 46px;
+    }
+}
